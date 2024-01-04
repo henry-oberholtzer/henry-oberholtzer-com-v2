@@ -1,10 +1,21 @@
+import NavigationButton from './NavigationButton';
+
 const NavigationBar = () => {
 	return (
 		<div className="navigation">
 			<nav>
-				<a href="./music.html">music</a>
-				<a href="./design.html">design</a>
-				<a href="./code">& code</a>
+				<NavigationButton
+					to="music"
+					name="music"
+				/>
+				<NavigationButton
+					to="design"
+					name="design"
+				/>
+				<NavigationButton
+					to="code"
+					name="& code"
+				/>
 			</nav>
 		</div>
 	);

@@ -6,11 +6,13 @@ import ErrorPage from './components/ErrorPage.tsx';
 import PageBlocks from './components/PageBlocks.tsx';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import getData from './data/data.ts';
 
-const rootLoader = async () => {
-	const data = await getData();
-	return { data };
+const rootLoader = async (param?: string) => {
+	const data = await fetch(`./data/${param}.json`);
+	if (data.status === 404) {
+		throw new Response('Not Found', { status: 404 });
+	}
+	return data.json();
 };
 
 const router = createBrowserRouter([
@@ -18,15 +20,17 @@ const router = createBrowserRouter([
 		path: '/',
 		element: <App />,
 		errorElement: <ErrorPage />,
-		loader: rootLoader,
 		children: [
 			{
 				path: 'about',
 				element: <AboutPage />,
 			},
 			{
-				path: 'code',
+				path: '/p/:pageCategory',
 				element: <PageBlocks />,
+				loader: ({ params }) => {
+					return rootLoader(params.pageCategory);
+				},
 			},
 		],
 	},

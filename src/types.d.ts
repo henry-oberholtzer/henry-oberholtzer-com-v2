@@ -20,11 +20,26 @@ interface projectInformation {
   dateStarted: string,
   dateCompleted: string,
   descHTML: string,
-  imgs: imgData[],
+  primaryImage: imgData,
+  otherImages: imgData[] | null,
   externalLink: externalLink,
   list: informationList
 }
 
 interface projectData {
   [key: string]: projectInformation,
+}
+
+interface database {
+  [key: string]: projectData
+}
+
+interface ProjectBlock {
+  key: string,
+  data: projectInformation
+}
+
+interface NavigationButon {
+  to: string,
+  name: string,
 }
