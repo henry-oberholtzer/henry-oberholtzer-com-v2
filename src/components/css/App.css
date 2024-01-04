@@ -1,0 +1,181 @@
+/* main box */
+.main-box {
+	margin: auto;
+	width: 47.2rem;
+	position: aboslute;
+	margin-top: 20vh;
+	height: 100%;
+}
+
+/* header */
+.header {
+	display: flex;
+	flex-direction: column;
+}
+
+.logo {
+	text-transform: lowercase;
+	font-size: 2.6rem;
+	margin-bottom: -2rem;
+}
+
+/* navigation */
+.navigation {
+	max-width: 47.2rem;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	max-width: 65%;
+	margin-left: auto;
+	margin-bottom: 2rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+nav a {
+	flex-grow: 1;
+	margin: 0.5rem;
+	border-bottom: 0.12rem solid var(--font-color-main);
+	transition: all 200ms;
+}
+
+nav a:hover {
+	border-bottom-color: var(--font-color-hover);
+	color: var(--font-color-hover);
+}
+
+/* content div */
+
+.content {
+	overflow: auto;
+}
+
+.content p {
+	margin-bottom: 2rem;
+}
+
+/* id */
+#nipper {
+	float: right;
+	display: inline;
+	max-width: 25%;
+	opacity: 0.75;
+}
+
+/* container & blocks div */
+.title {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 0.12rem solid var(--font-color-hover);
+	margin: 1rem 0;
+	width: 100%;
+}
+
+.title:first-of-type {
+	margin-top: 2rem;
+}
+
+.blocks {
+	display: flex;
+	flex-direction: row;
+}
+
+.blocks:last-of-type {
+	margin-bottom: 10rem;
+}
+
+.blocks img {
+	max-width: 32%;
+	object-fit: cover;
+	aspect-ratio: 1 / 1;
+	margin-right: 3%;
+	border-radius: 0.5rem;
+}
+
+.blocks p {
+	width: 35%;
+}
+
+.blocks ul,
+.blocks ol {
+	width: 30%;
+	font-size: 0.8rem;
+	list-style-position: inside;
+	line-height: 2rem;
+}
+
+.blocks ul li:first-of-type,
+.blocks ol li:first-of-type {
+	list-style: none;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.vert {
+	flex-direction: column;
+}
+
+.vert p {
+	width: 100%;
+}
+
+/* responsive css */
+@media screen and (orientation: portrait) and (max-width: 47.2rem) {
+	.long-name {
+		display: flex;
+		height: 0;
+		width: 0;
+		text-indent: 100%;
+		overflow: hidden;
+	}
+
+	.main-box {
+		margin: 10%;
+		margin-top: 20vh;
+		height: 100%;
+	}
+
+	nav {
+		flex-direction: column;
+		text-align: left;
+		margin: auto;
+		margin-bottom: 2rem;
+		max-width: 100%;
+	}
+
+	nav a {
+		margin-left: 0;
+	}
+
+	.logo {
+		text-align: left;
+	}
+
+	.blocks {
+		flex-direction: column;
+	}
+
+	.blocks img {
+		max-width: 80%;
+	}
+
+	.blocks p {
+		width: 100%;
+	}
+
+	.blocks ul {
+		width: 100%;
+	}
+
+	#nipper {
+		display: flex;
+		float: none;
+		margin: auto;
+		margin-bottom: 2rem;
+		max-width: 50%;
+	}
+}

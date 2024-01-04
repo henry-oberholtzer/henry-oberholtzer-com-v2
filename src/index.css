@@ -1,0 +1,71 @@
+/* variables */
+:root {
+	--main-color-background: #fff;
+	--font-color-main: #000;
+	--font-color-main-lt: #333;
+	--font-color-hover: #666;
+}
+
+/* full page css */
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+#root {
+	width: 100vw;
+	height: 100vh;
+	max-width: 100%;
+	max-height: 100%;
+	font-family: 'Computer Modern', 'Georgia', 'Times New Roman', serif;
+}
+
+/* fonts */
+
+@font-face {
+	font-family: 'Computer Modern';
+	src: url(./assets/fonts/CMUNRM.OTF);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Computer Modern';
+	src: url(./assets/fonts/CMUNBX.OTF);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Computer Modern';
+	src: url(./assets/fonts/CMUNTI.OTF);
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* global elements */
+a {
+	text-decoration: none;
+	color: var(--font-color-main);
+}
+
+p a {
+	font-weight: bold;
+	color: var(--font-color-main-lt);
+}
+
+a:hover {
+	text-decoration: none;
+	color: var(--font-color-hover);
+	transition: color 500ms ease;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	margin: auto;
+	height: 100%;
+}
+
+em {
+	position: relative;
+	bottom: -0.5rem;
+}
