@@ -4,7 +4,7 @@ import App from './components/App.tsx';
 import AboutPage from './components/AboutPage.tsx';
 import ErrorPage from './components/ErrorPage.tsx';
 import PageBlocks from './components/PageBlocks.tsx';
-import './index.css';
+import './index.scss';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const rootLoader = async (request?: string) => {

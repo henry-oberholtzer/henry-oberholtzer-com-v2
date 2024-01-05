@@ -1,4 +1,4 @@
-import './css/App.css';
+import './css/App.scss';
 import HeaderBlock from './HeaderBlock';
 import { Outlet } from 'react-router-dom';
 

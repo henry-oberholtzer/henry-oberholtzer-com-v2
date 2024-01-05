@@ -3,7 +3,7 @@ import NavigationBar from './NavigationBar';
 
 const HeaderBlock = () => {
 	return (
-		<div className="header">
+		<div className="header-block">
 			<Link
 				className="logo"
 				to={'/'}
