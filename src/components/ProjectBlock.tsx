@@ -1,9 +1,9 @@
 const ProjectBlock = (props: ProjectBlock) => {
-	const { key, data } = props;
+	const { data } = props;
 	const { title, externalLink, descHTML, primaryImage, list, dateStarted } =
 		data;
 	return (
-		<div key={key}>
+		<div>
 			<div className="title">
 				<h3>
 					<a
@@ -23,8 +23,8 @@ const ProjectBlock = (props: ProjectBlock) => {
 				<p>{descHTML}</p>
 				<ul>
 					<li>{list.title}</li>
-					{list.information.map((item) => {
-						return <li>{item}</li>;
+					{list.information.map((item, index) => {
+						return <li key={index}>{item}</li>;
 					})}
 				</ul>
 			</div>

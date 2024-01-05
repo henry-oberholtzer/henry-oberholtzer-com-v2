@@ -5,15 +5,15 @@ const NavigationBar = () => {
 		<div className="navigation">
 			<nav>
 				<NavigationButton
-					to="music"
+					to="/portfolio/music"
 					name="music"
 				/>
 				<NavigationButton
-					to="design"
+					to="/portfolio/design"
 					name="design"
 				/>
 				<NavigationButton
-					to="code"
+					to="/portfolio/code"
 					name="& code"
 				/>
 			</nav>

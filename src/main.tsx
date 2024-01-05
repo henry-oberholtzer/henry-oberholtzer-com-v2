@@ -7,12 +7,12 @@ import PageBlocks from './components/PageBlocks.tsx';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-const rootLoader = async (param?: string) => {
-	const data = await fetch(`./data/${param}.json`);
-	if (data.status === 404) {
-		throw new Response('Not Found', { status: 404 });
-	}
-	return data.json();
+const rootLoader = async (request?: string) => {
+	return fetch(`/data/${request}.json`)
+		.then((res) => res.json())
+		.then((data) => {
+			return data;
+		});
 };
 
 const router = createBrowserRouter([
@@ -22,15 +22,14 @@ const router = createBrowserRouter([
 		errorElement: <ErrorPage />,
 		children: [
 			{
-				path: 'about',
+				path: '/',
 				element: <AboutPage />,
 			},
 			{
-				path: '/p/:pageCategory',
+				path: '/portfolio/:portfolioCategory',
 				element: <PageBlocks />,
-				loader: ({ params }) => {
-					return rootLoader(params.pageCategory);
-				},
+				loader: ({ params }) => rootLoader(params.portfolioCategory),
+				errorElement: <ErrorPage />,
 			},
 		],
 	},

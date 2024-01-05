@@ -35,7 +35,6 @@ interface database {
 }
 
 interface ProjectBlock {
-  key: string,
   data: projectInformation
 }
 

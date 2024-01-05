@@ -1,12 +1,12 @@
 {
-	"portfoliowebsite": {
+	"henryoberholtzer-com": {
 		"title": "henryoberholtzer.com",
-		"key": "portfoliowebsite",
+		"key": "henryoberholtzer-com",
 		"dateStarted": "October 2023",
 		"dateCompleted": "January 2024",
 		"descHTML": "A portfolio website created to showcase my work across mediums, including code, music, and eventually design.",
 		"primaryImage": {
-			"imgURL": "./imgs/portfolio.png",
+			"imgURL": "https://picsum.photos/400/400",
 			"alt": "A screenshot of the henryoberholzer.com homepage",
 			"title": "henryoberholtzer.com homepage"
 		},
