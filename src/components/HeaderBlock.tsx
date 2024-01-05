@@ -5,10 +5,9 @@ const HeaderBlock = () => {
 	return (
 		<div className="header-block">
 			<Link
-				className="logo"
 				to={'/'}
 				title="henryoberholtzer.com">
-				<h1>Henry Oberholtzer</h1>
+				<h1 className="logo">Henry Oberholtzer</h1>
 			</Link>
 			<NavigationBar />
 		</div>

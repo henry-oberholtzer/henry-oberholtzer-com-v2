@@ -54,78 +54,12 @@ p a {
 	color: var(--font-color-main-lt);
 }
 
-a:hover {
-	text-decoration: none;
-	color: var(--font-color-hover);
-	transition: color 500ms ease-in-out;
-}
-
-body {
-	display: flex;
-	align-items: center;
-	margin: auto;
-	height: 100%;
-}
-
-em {
-	position: relative;
-	bottom: -0.5rem;
-}
-
 /* responsive css */
 @media screen and (max-width: 480px) {
-
 }
 @media screen and (max-width: 768px) {
-
 }
 @media screen and (max-width: 1024px) {
-
 }
-
-	// .main-box {
-	// 	margin: 10%;
-	// 	margin-top: 20vh;
-	// 	height: 100%;
-	// }
-
-	// nav {
-	// 	flex-direction: column;
-	// 	text-align: left;
-	// 	margin: auto;
-	// 	margin-bottom: 2rem;
-	// 	max-width: 100%;
-	// }
-
-	// nav a {
-	// 	margin-left: 0;
-	// }
-
-	// .logo {
-	// 	text-align: left;
-	// }
-
-	// .blocks {
-	// 	flex-direction: column;
-	// }
-
-	// .blocks img {
-	// 	max-width: 80%;
-	// }
-
-	// .blocks p {
-	// 	width: 100%;
-	// }
-
-	// .blocks ul {
-	// 	width: 100%;
-	// }
-
-	// #nipper {
-	// 	display: flex;
-	// 	float: none;
-	// 	margin: auto;
-	// 	margin-bottom: 2rem;
-	// 	max-width: 50%;
-	// }
+@media screen and (max-width: 1200px) {
 }

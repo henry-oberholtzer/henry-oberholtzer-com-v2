@@ -2,31 +2,58 @@ const ProjectBlock = (props: ProjectBlock) => {
 	const { data } = props;
 	const { title, externalLink, descHTML, primaryImage, list, dateStarted } =
 		data;
+
+	const listItemGenerator = (itemArray: string[]) => {
+		return itemArray.map((item, index) => {
+			return <li key={index}>{item}</li>;
+		});
+	};
+
+	const listBlockGenerator = (list: informationList) => {
+		switch (list.type) {
+			case 'ol':
+				return <ol>{listItemGenerator(list.information)}</ol>;
+			default:
+				return <ul>{listItemGenerator(list.information)}</ul>;
+		}
+	};
+
 	return (
-		<div>
-			<div className="title">
-				<h3>
-					<a
-						href={externalLink.externalURL}
-						title={externalLink.linkText}>
+		<div className="project-block">
+			<div className="title-section">
+				<a
+					href={externalLink.externalURL}
+					title={externalLink.linkText}>
+					<h3 className="title-text">
 						{title}
-					</a>
-				</h3>
-				<em>{dateStarted}</em>
+						<span className="date-started">{dateStarted}</span>
+					</h3>
+					<hr className="navigation-underline" />
+				</a>
 			</div>
 			<div className="blocks">
-				<img
-					src={primaryImage.imgURL}
-					alt={primaryImage.alt}
-					title={primaryImage.title}
-				/>
-				<p>{descHTML}</p>
-				<ul>
-					<li>{list.title}</li>
-					{list.information.map((item, index) => {
-						return <li key={index}>{item}</li>;
-					})}
-				</ul>
+				<div className="upper-block">
+					<div className="imageGroup">
+						<img
+							src={primaryImage.imgURL}
+							alt={primaryImage.alt}
+							title={primaryImage.title}
+						/>
+						{primaryImage.title != null ? (
+							<>
+								<p className="image-caption">{primaryImage.title}</p>
+							</>
+						) : (
+							''
+						)}
+					</div>
+					<p className="description">{descHTML}</p>
+				</div>
+				<hr className="navigation-underline" />
+				<div className="list-block">
+					<p className="list-title">{list.title}</p>
+					{listBlockGenerator(list)}
+				</div>
 			</div>
 		</div>
 	);

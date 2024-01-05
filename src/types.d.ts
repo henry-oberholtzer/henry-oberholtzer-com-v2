@@ -1,7 +1,7 @@
 interface imgData {
   imgURL: string,
   alt: string,
-  title: string,
+  title?: string,
 }
 
 interface externalLink {
@@ -11,6 +11,7 @@ interface externalLink {
 
 interface informationList {
   title: string,
+  type: "ol" | "ul",
   information: string[]
 }
 
@@ -18,7 +19,7 @@ interface projectInformation {
   title: string,
   key: string,
   dateStarted: string,
-  dateCompleted: string,
+  dateCompleted?: string,
   descHTML: string,
   primaryImage: imgData,
   otherImages: imgData[] | null,
