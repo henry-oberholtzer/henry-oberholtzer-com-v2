@@ -25,8 +25,9 @@
 .navigation-bar {
 	width: 100%;
 	margin: 0;
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-auto-columns: auto;
+	gap: 8px;
 }
 
 .navigation-underline {
@@ -41,9 +42,9 @@
 }
 
 .navigation-button {
-	flex-grow: 1;
+	grid-row: 1;
+	grid-column: auto;
 	font-size: 18px;
-	margin: 0 8px;
 }
 
 .pageActive {
@@ -82,7 +83,6 @@
 			justify-content: space-between;
 		}
 		.navigation-underline {
-			position: relative;
 			width: 100%;
 			color: var(--font-color-main);
 			border: 0;
@@ -141,6 +141,29 @@
 	}
 }
 
+// footer
+.footer {
+	padding-top: 32px;
+	font-size: 16px;
+	color: var(--font-color-ultralight);
+	div {
+		padding-top: 16px;
+		display: flex;
+		justify-content: space-between;
+	}
+	div a {
+		color: var(--font-color-ultralight);
+		transition: color ease-in-out 200ms;
+	}
+}
+
+.footer a:hover {
+	color: var(--font-color-main);
+}
+.footer a:focus {
+	color: var(--font-color-main);
+}
+
 @media screen and (min-width: 480px) {
 	.header-block {
 		.logo {
@@ -151,27 +174,21 @@
 @media screen and (min-width: 680px) {
 	.project-block {
 		.upper-block {
-			margin: 0 8px;
-			display: flex;
+			display: grid;
+			gap: 8px;
+			grid-template-columns: 1fr 2fr;
 			width: 100%;
-			.imageGroup {
-				flex-basis: 50%;
-				margin: 0 8px 0 0;
-			}
-			.description {
-				margin: 0 0 0 8px;
-				flex-grow: 1;
-			}
 		}
 		.upper-block:first-child {
-			margin-left: 0px;
+			grid-column: 1;
 		}
 		.upper-block:last-child {
-			margin-right: 0px;
+			grid-column: 2;
 		}
 		.blocks {
 			.navigation-underline {
 				margin-top: 8px;
+				border-top-color: var(--font-color-hover);
 			}
 		}
 	}

@@ -23,7 +23,8 @@ const ProjectBlock = (props: ProjectBlock) => {
 			<div className="title-section">
 				<a
 					href={externalLink.externalURL}
-					title={externalLink.linkText}>
+					title={externalLink.linkText}
+					target="_blank">
 					<h3 className="title-text">
 						{title}
 						<span className="date-started">{dateStarted}</span>
