@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import './css/headerblock.scss';
 import NavigationBar from './NavigationBar';
 
 const HeaderBlock = () => {

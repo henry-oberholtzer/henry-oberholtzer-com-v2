@@ -1,4 +1,6 @@
 import NavigationButton from './NavigationButton';
+import './css/navigationbar.scss';
+
 const NavigationBar = () => {
 	return (
 		<nav className="navigation-bar">

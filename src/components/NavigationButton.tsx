@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router';
+import './css/navigationbutton.scss';
 const NavigationButton = (props: NavigationButon) => {
 	const location = useLocation();
 	const { to, name } = props;

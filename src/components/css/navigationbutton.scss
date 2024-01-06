@@ -1,0 +1,43 @@
+.navigation-button {
+	font-weight: bold;
+	grid-row: 1;
+	grid-column: auto;
+	font-size: 18px;
+}
+
+.navigation-button:first-of-type {
+	margin-left: 0;
+}
+
+.navigation-button:last-of-type {
+	margin-right: 0;
+}
+
+.navigation-underline {
+	position: relative;
+	width: 100%;
+	color: var(--font-color-main);
+	border: 0;
+	border-top: 1px solid var(--font-color-main);
+	border-bottom: 1px solid transparent;
+	height: 1px;
+	transition: border-bottom ease-in-out 200ms;
+}
+
+.pageActive {
+	.navigation-underline {
+		border-bottom: 1px solid var(--font-color-main);
+	}
+}
+
+.navigation-button:focus {
+	.navigation-underline {
+		border-bottom: 1px solid var(--font-color-main);
+	}
+}
+
+.navigation-button:hover {
+	.navigation-underline {
+		border-bottom: 1px solid var(--font-color-main);
+	}
+}

@@ -1,4 +1,5 @@
 import emailAddress from './email';
+import './css/footer.scss';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {

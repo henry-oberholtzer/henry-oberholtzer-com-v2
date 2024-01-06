@@ -1,3 +1,5 @@
+import './css/projectblock.scss';
+
 const ProjectBlock = (props: ProjectBlock) => {
 	const { data } = props;
 	const { title, externalLink, descHTML, primaryImage, list, dateStarted } =
@@ -33,24 +35,22 @@ const ProjectBlock = (props: ProjectBlock) => {
 				</a>
 			</div>
 			<div className="blocks">
-				<div className="upper-block">
-					<div className="imageGroup">
-						<img
-							src={primaryImage.imgURL}
-							alt={primaryImage.alt}
-							title={primaryImage.title}
-						/>
-						{primaryImage.title != null ? (
-							<>
-								<p className="image-caption">{primaryImage.title}</p>
-							</>
-						) : (
-							''
-						)}
-					</div>
-					<p className="description">{descHTML}</p>
+				<div className="imageGroup">
+					<img
+						src={primaryImage.imgURL}
+						alt={primaryImage.alt}
+						title={primaryImage.title}
+					/>
+					{primaryImage.title != null ? (
+						<>
+							<p className="image-caption">{primaryImage.title}</p>
+						</>
+					) : (
+						''
+					)}
 				</div>
-				<hr className="navigation-underline" />
+				<p className="description">{descHTML}</p>
+				<hr className="navigation-underline desktop-hidden" />
 				<div className="list-block">
 					<p className="list-title">{list.title}</p>
 					{listBlockGenerator(list)}
