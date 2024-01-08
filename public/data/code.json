@@ -6,13 +6,13 @@
 		"dateCompleted": "January 2024",
 		"descHTML": "A portfolio website created to showcase my work across mediums, including code, music, and eventually design.",
 		"primaryImage": {
-			"imgURL": "https://picsum.photos/600/600",
+			"imgURL": "/data/imgs/portfolio.png",
 			"alt": "A screenshot of the henryoberholzer.com homepage",
 			"title": null
 		},
 		"otherImages": null,
 		"list": {
-			"title": "Written In:",
+			"title": "Built using:",
 			"type": "ul",
 			"information": ["TypeScript", "React", "SCSS"]
 		},
@@ -21,26 +21,46 @@
 			"externalURL": "https://github.com/henry-oberholtzer/digital_oberholtzer"
 		}
 	},
-	"somethingelse": {
-		"title": "henryoberholtzer.com",
-		"key": "somethingelse",
-		"dateStarted": "October 2023",
-		"dateCompleted": "January 2024",
-		"descHTML": "A portfolio website created to showcase my work across mediums, including code, music, and eventually design.",
+	"record-store": {
+		"title": "Record Store",
+		"key": "record-store",
+		"dateStarted": "December 2023",
+		"dateCompleted": "December 2023",
+		"descHTML": "A React web application that emulates a record store interface, also includes usage of database-like tools, and a fake, nonsecure user log-in page",
 		"primaryImage": {
-			"imgURL": "https://picsum.photos/600/600",
-			"alt": "A screenshot of the henryoberholzer.com homepage",
-			"title": "henryoberholtzer.com homepage"
+			"imgURL": "/data/imgs/portfolio.png",
+			"alt": "A screenshot of the Record Store project webpage"
 		},
 		"otherImages": null,
 		"list": {
-			"title": "Written In:",
-			"type": "ol",
-			"information": ["TypeScript", "React", "SCSS"]
+			"title": "Built using:",
+			"type": "ul",
+			"information": ["React, Redux, TypeScript, Vite"]
 		},
 		"externalLink": {
 			"linkText": "View this project on GitHub",
-			"externalURL": "https://github.com/henry-oberholtzer/digital_oberholtzer"
+			"externalURL": "https://github.com/henry-oberholtzer/record-store"
+		}
+	},
+	"currency-exchange": {
+		"title": "Currency Exchange",
+		"key": "currency-exchange",
+		"dateStarted": "November 2023",
+		"dateCompleted": "November 2023",
+		"descHTML": "A JS application to calculate an exchange rate between two currencies based on the ExchangeRate-API",
+		"primaryImage": {
+			"imgURL": "/data/imgs/portfolio.png",
+			"alt": "A screenshot of the Curreny Exchange project webpage"
+		},
+		"otherImages": null,
+		"list": {
+			"title": "Built using:",
+			"type": "ul",
+			"information": ["JavaScript", "React", "Bootstrap", "Webpack", "SCSS"]
+		},
+		"externalLink": {
+			"linkText": "View this project on GitHub",
+			"externalURL": "https://github.com/henry-oberholtzer/currency-exchange"
 		}
 	}
 }

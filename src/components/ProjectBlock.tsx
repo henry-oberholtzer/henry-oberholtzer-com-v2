@@ -37,7 +37,7 @@ const ProjectBlock = (props: ProjectBlock) => {
 			<div className="blocks">
 				<div className="imageGroup">
 					<img
-						src={primaryImage.imgURL}
+						src={window.location.origin + primaryImage.imgURL}
 						alt={primaryImage.alt}
 						title={primaryImage.title}
 					/>
