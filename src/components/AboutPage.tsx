@@ -27,17 +27,17 @@ const AboutPage = () => {
 			</p>
 			<br />
 			<p>
-				I'm passionate about music, djing, media archiving, vinyl, and music
-				production - I'll be posting more about all this in the future!
+				Passionate about music, djing, media archiving, vinyl, and music
+				production.
 			</p>
 			<br />
 			<p>
-				i am currently studying web development full time at Epicodus, and am
-				continuing to take in new languages and skills every day.
+				Studying web development full time at Epicodus, and am continuing to
+				take in new languages and skills every day.
 			</p>
 			<br />
 			<p>
-				interested in working together? you can contact me at {emailAddress()}
+				Interested in working together? You can contact me at {emailAddress()}
 			</p>
 		</div>
 	);

@@ -71,25 +71,21 @@
 			gap: 8px;
 			grid-auto-columns: 1fr;
 			width: 100%;
-			.navigation-underline {
-				margin-top: 8px;
-				border-top-color: var(--font-color-hover);
-			}
 			.imageGroup {
 				grid-row: 1;
 			}
 			.description {
 				grid-row: 1;
-				grid-column: span 2;
+				grid-column: span 1;
 				padding: 0;
 			}
 			.desktop-hidden {
-				grid-row: 2;
-				grid-column: span 3;
+				position: fixed;
+				visibility: hidden;
 			}
 			.list-block {
-				grid-row: 3;
-				grid-column: span 3;
+				grid-row: 1;
+				grid-column: span 1;
 				padding: 0;
 			}
 		}

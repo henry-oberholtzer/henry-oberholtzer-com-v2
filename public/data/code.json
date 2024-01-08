@@ -35,7 +35,7 @@
 		"list": {
 			"title": "Built using:",
 			"type": "ul",
-			"information": ["React, Redux, TypeScript, Vite"]
+			"information": ["React", "Redux", "TypeScript", "Vite"]
 		},
 		"externalLink": {
 			"linkText": "View this project on GitHub",
