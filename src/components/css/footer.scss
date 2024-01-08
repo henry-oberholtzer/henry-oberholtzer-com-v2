@@ -24,6 +24,18 @@
 	color: var(--font-color-main);
 }
 
+@media (prefers-contrast: more) {
+	.footer {
+		color: var(--font-color-main);
+		div a {
+			color: var(--font-color-main);
+		}
+		.navigation-underline {
+			border-top-color: var(--font-color-main);
+		}
+	}
+}
+
 @media screen and (min-width: 680px) {
 	.footer {
 		div {

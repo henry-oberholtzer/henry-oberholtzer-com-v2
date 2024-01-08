@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
 	const year = new Date().getFullYear();
 	return (
-		<div className="footer">
+		<footer className="footer">
 			<hr className="navigation-underline" />
 			<div>
 				<span>
@@ -24,7 +24,7 @@ const Footer = () => {
 					</p>
 				</span>
 			</div>
-		</div>
+		</footer>
 	);
 };
 

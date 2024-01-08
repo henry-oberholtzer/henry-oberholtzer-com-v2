@@ -19,19 +19,7 @@ By Henry Oberholtzer
 
 ## Description
 
-### Routes
-
-```
-/ --- Home
-/resume --- Resume
-/about --- About
-/projects
-  ./{project-title}
-/music
-  ./mixes
-  ./releases
-/design
-```
+A simple website, build to expand based on an eventual connection to a database containing my work.
 
 ### Component Tree
 
@@ -54,16 +42,18 @@ App
 
 ## Setup/Installation Requirements
 
-- TBD
+- Node package manager required for set up.
+- To establish locally, download the [repository](https://github.com/henry-oberholtzer/henry-oberholtzer-com-v2.git) to your computer.
+- Open the folder with your terminal and run `npm install` to gather necessary resources.
+- To view the development server follow with, `npm run dev` after install is complete.
+- The site will be live on the mentioned local port.
 
 ## Known Bugs
 
-- TBD
+- Apart from content still being missing in some areas, no bugs are known at this time.
 
 ## Upcoming Changes / Planned Features
 
-- React Router
-- Context Provider?
 - SEO meta tags
 - React Animations (react-spring /core?)
 - Switchable themes
@@ -75,5 +65,5 @@ Copyright [Henry Oberholtzer](https://www.henryoberholtzer.com/) (c) 2023
 
 Original code licensed under GNU GPLv3, other code bases and libraries as stated.
 
-[MU Serif](https://fontlibrary.org/en/font/cmu-serif) (C)
+[CMU Serif](https://fontlibrary.org/en/font/cmu-serif) (C)
 Donald Knuth and licensed under a SIL OFL

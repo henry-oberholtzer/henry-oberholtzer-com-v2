@@ -3,29 +3,27 @@ import emailAddress from './email';
 
 const AboutPage = () => {
 	return (
-		<div className="content">
+		<div className="about-page">
+			<p>Programmer, musician and designer based in the Pacific Northwest.</p>
+			<br />
 			<p>
-				Hello! I'm a programmer, musician and designer based in the pacific
-				northwest.
+				Experienced in JavaScript, TypeScript, React, and C#, interested in
+				learning C++ and Python.
 			</p>
 			<br />
 			<p>
-				I have experience in JavaScript, TypeScript, React, C# and am working on
-				growing my skills to include C++ and Python.
-			</p>
-			<br />
-			<p>
-				<Link to="/portfolio/code">My code page</Link> features my favorite
-				projects, but you can get into the details on my{' '}
+				<Link to="/portfolio/code">
+					Some of my favorite projects I've been involved in
+				</Link>
+				, with many more on{' '}
 				<Link to="https://github.com/henry-oberholtzer">github</Link>.
 			</p>
 			<br />
-			<p>I attend Reed College where I studied music composition</p>
 			<p>
 				<Link to="https://github.com/henry-oberholtzer/waveform-transmissions/blob/c75d6d415022685364b2a0a7561adfaed8f00ef3/thesis.pdf">
 					Waveform Transmission
 				</Link>
-				, my senior thesis, focused on the use of minimalism in techno.
+				, my undergraduate thesis, explores minimalism as used in techno.
 			</p>
 			<br />
 			<p>

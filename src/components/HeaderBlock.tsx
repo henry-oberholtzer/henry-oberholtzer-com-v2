@@ -4,14 +4,15 @@ import NavigationBar from './NavigationBar';
 
 const HeaderBlock = () => {
 	return (
-		<div className="header-block">
+		<header className="header-block">
 			<Link
 				to={'/'}
 				title="henryoberholtzer.com">
 				<h1 className="logo">Henry Oberholtzer</h1>
+				<hr className="header-underline" />
 			</Link>
 			<NavigationBar />
-		</div>
+		</header>
 	);
 };
 

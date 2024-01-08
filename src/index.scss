@@ -1,9 +1,9 @@
 /* variables */
 :root {
-	--main-color-background: #fff;
-	--font-color-main: #000;
-	--font-color-main-lt: #333;
-	--font-color-hover: #666;
+	--main-color-background: #c9def0;
+	--font-color-main: #1a2415;
+	--font-color-main-lt: #1f6bb3;
+	--font-color-hover: #989c96;
 	--font-color-ultralight: #aaa;
 }
 
@@ -50,11 +50,17 @@ html {
 a {
 	text-decoration: none;
 	color: var(--font-color-main);
+	transition: opacity ease-in-out 200ms;
 }
 
-p a {
-	font-weight: bold;
-	color: var(--font-color-main-lt);
+.about-page {
+	a {
+		font-weight: bold;
+		color: var(--font-color-main-lt);
+	}
+	a:hover {
+		opacity: 0.5;
+	}
 }
 
 /* responsive css */

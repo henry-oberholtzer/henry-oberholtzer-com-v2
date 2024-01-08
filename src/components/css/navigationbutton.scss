@@ -31,12 +31,14 @@
 }
 
 .navigation-button:focus {
+	color: var(--font-color-main);
 	.navigation-underline {
 		border-bottom: 1px solid var(--font-color-main);
 	}
 }
 
 .navigation-button:hover {
+	color: var(--font-color-main);
 	.navigation-underline {
 		border-bottom: 1px solid var(--font-color-main);
 	}
