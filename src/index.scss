@@ -16,8 +16,10 @@
 #root {
 	width: 100%;
 	height: 100%;
-	font-family: 'Computer Modern', 'Georgia', 'Times New Roman', serif;
-	text-rendering: optimizeLegibility !important;
+	display: flex;
+	justify-content: center;
+	font-family: 'Gyre Bonum', 'Computer Modern', 'Georgia', 'Times New Roman', serif;
+	text-rendering: geometricPrecision !important;
 	-webkit-font-smoothing: antialiased !important;
 }
 
@@ -28,23 +30,26 @@ html {
 /* fonts */
 
 @font-face {
-	font-family: 'Computer Modern';
-	src: url(./assets/fonts/CMUNRM.OTF);
+	font-family: 'Gyre Bonum';
+	src: url(./assets/fonts/gyre-bonum/texgyrebonum-regular.otf);
 	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Computer Modern';
-	src: url(./assets/fonts/CMUNBX.OTF);
-	font-weight: bold;
-}
-
-@font-face {
-	font-family: 'Computer Modern';
-	src: url(./assets/fonts/CMUNTI.OTF);
+	font-family: 'Gyre Bonum';
+	src: url(./assets/fonts/gyre-bonum/texgyrebonum-italic.otf);
 	font-weight: normal;
 	font-style: italic;
 }
+
+@font-face {
+	font-family: 'Gyre Bonum';
+	src: url(./assets/fonts/gyre-bonum/texgyrebonum-bold.otf);
+	font-weight: bold;
+	font-style: normal;
+}
+
 
 /* global elements */
 a {

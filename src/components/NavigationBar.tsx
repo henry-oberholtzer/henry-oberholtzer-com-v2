@@ -1,22 +1,26 @@
 import NavigationButton from './NavigationButton';
-import './css/navigationbar.scss';
+import styled from 'styled-components'
+
+const Nav = styled.nav`
+width: 100%;
+margin: 0;
+display: grid;
+grid-auto-columns: 1fr;
+gap: 8px;
+}`
 
 const NavigationBar = () => {
 	return (
-		<nav className="navigation-bar">
+		<Nav>
 			<NavigationButton
-				to="/portfolio/code"
+				to="/code"
 				name="code"
 			/>
 			<NavigationButton
-				to="/portfolio/music"
+				to="/music"
 				name="music"
 			/>
-			<NavigationButton
-				to="/portfolio/design"
-				name="& design"
-			/>
-		</nav>
+		</Nav>
 	);
 };
 

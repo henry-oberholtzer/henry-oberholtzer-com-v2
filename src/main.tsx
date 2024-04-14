@@ -7,13 +7,6 @@ import PageBlocks from './components/PageBlocks.tsx';
 import './index.scss';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-const rootLoader = async (request?: string) => {
-	return fetch(`/data/${request}.json`)
-		.then((res) => res.json())
-		.then((data) => {
-			return data;
-		});
-};
 
 const router = createBrowserRouter([
 	{
@@ -28,7 +21,6 @@ const router = createBrowserRouter([
 			{
 				path: '/portfolio/:portfolioCategory',
 				element: <PageBlocks />,
-				loader: ({ params }) => rootLoader(params.portfolioCategory),
 				errorElement: <ErrorPage />,
 			},
 		],
