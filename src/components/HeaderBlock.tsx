@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import NavigationBar from './NavigationBar';
 import styled from 'styled-components'
 
 const HR = styled.hr`
@@ -38,7 +37,7 @@ padding-top: 12px;
 padding-bottom: 24px;
 `
 
-const HeaderBlock = () => {
+const HeaderBlock = (props: HeaderBlockProps) => {
 	return (
 		<Header>
 			<Link
@@ -47,11 +46,12 @@ const HeaderBlock = () => {
 				<H1>Henry Oberholtzer
 				<HR/>
 				</H1>
-				
 			</Link>
-			<NavigationBar />
+			{props.children}
 		</Header>
 	);
 };
+
+
 
 export default HeaderBlock;

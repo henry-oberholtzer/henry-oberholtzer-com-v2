@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Footer from './Footer';
 import HeaderBlock from './HeaderBlock';
+import NavigationBar from './NavigationBar';
 import { Outlet } from 'react-router-dom';
 
 const MainBox = styled.div`
@@ -17,10 +18,28 @@ padding: 0 18px;
 }
 `
 
+const properties = [
+		{
+			link: "/code",
+			title: "code"
+		},
+		{
+			link: "/music",
+			title: "music"
+		},
+		{
+			link: "/design",
+			title: "design"
+		}
+	]
+
 function App() {
 	return (
 		<MainBox>
-			<HeaderBlock />
+			<HeaderBlock 
+				children={<NavigationBar 
+				links={properties}/>}
+			/>
 			<Outlet />
 			<Footer />
 		</MainBox>

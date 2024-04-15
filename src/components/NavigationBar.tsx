@@ -9,19 +9,21 @@ grid-auto-columns: 1fr;
 gap: 8px;
 }`
 
-const NavigationBar = () => {
+const NavigationBar = (props: NavigationBarProps) => {
 	return (
 		<Nav>
-			<NavigationButton
-				to="/code"
-				name="code"
-			/>
-			<NavigationButton
-				to="/music"
-				name="music"
-			/>
+			{props.links.map((link, i) => {
+				return (
+					<NavigationButton
+						key={i}
+						to={link.link}
+						name={link.title}
+					/>
+				)
+			})}
 		</Nav>
 	);
 };
 
 export default NavigationBar;
+

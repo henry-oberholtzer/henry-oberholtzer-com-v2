@@ -8,6 +8,7 @@ import './index.scss';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 
+
 const router = createBrowserRouter([
 	{
 		path: '/',
@@ -19,7 +20,17 @@ const router = createBrowserRouter([
 				element: <AboutPage />,
 			},
 			{
-				path: '/portfolio/:portfolioCategory',
+				path: '/code',
+				element: <PageBlocks />,
+				errorElement: <ErrorPage />,
+			},
+			{
+				path: '/music',
+				element: <PageBlocks />,
+				errorElement: <ErrorPage />,
+			},
+			{
+				path: '/design',
 				element: <PageBlocks />,
 				errorElement: <ErrorPage />,
 			},
