@@ -1,4 +1,4 @@
-import NavigationButton from './NavigationButton';
+import { NavigationButton } from './NavigationButton';
 import styled from 'styled-components'
 
 const Nav = styled.nav`
@@ -7,6 +7,9 @@ margin: 0;
 display: grid;
 grid-auto-columns: 1fr;
 gap: 8px;
+& * {
+	grid-row: 1;
+	grid-column: auto;
 }`
 
 const NavigationBar = (props: NavigationBarProps) => {

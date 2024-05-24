@@ -1,32 +1,3 @@
-/* variables */
-:root {
-	--main-color-background: #c9def0;
-	--font-color-main: #1a2415;
-	--font-color-main-lt: #1f6bb3;
-	--font-color-hover: #989c96;
-	--font-color-ultralight: #aaa;
-}
-
-/* full page css */
-* {
-	box-sizing: border-box;
-	margin: 0;
-}
-
-#root {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	font-family: 'Gyre Bonum', 'Computer Modern', 'Georgia', 'Times New Roman', serif;
-	text-rendering: geometricPrecision !important;
-	-webkit-font-smoothing: antialiased !important;
-}
-
-html {
-	scrollbar-gutter: stable both-edges;
-}
-
 /* fonts */
 
 @font-face {
@@ -50,24 +21,6 @@ html {
 	font-style: normal;
 }
 
-
-/* global elements */
-a {
-	text-decoration: none;
-	color: var(--font-color-main);
-	font-weight: normal;
-	transition: opacity ease-in-out 50ms;
-}
-
-.about-page {
-	a {
-		font-weight: normal;
-		color: var(--font-color-main-lt);
-	}
-	a:hover {
-		opacity: 0.9;
-	}
-}
 
 /* responsive css */
 @media screen and (max-width: 480px) {

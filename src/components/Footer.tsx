@@ -1,12 +1,13 @@
 import emailAddress from './email';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { HorizontalRule } from './HorizontalRule';
 
 const StyledFooter = styled.footer`
 padding-top: 32px;
 font-size: 16px;
 font-weight: normal;
-color: #aaaaaa;
+color: ${props => props.theme.textLight};
 > div {
 	padding-top: 16px;
 	display: flex;
@@ -14,23 +15,17 @@ color: #aaaaaa;
 	justify-content: space-between;
 }
 a {
-	color: #aaaaaa;
+	color: ${props => props.theme.textLight};
 	transition: color ease-in-out 200ms;
 }
 a:hover, a:focus, a:active {
 	color: #1a2415;
 }
-hr {
-	border-top-color: #aaaaaa;
-}
 @media (prefers-contrast: more) {
 	.footer {
-		color:  #1a2415;
+		color:  ${props => props.theme.text};
 		div a {
-			color:  #1a2415;
-		}
-		hr {
-			border-top-color:  #1a2415;
+			color:  ${props => props.theme.text};
 		}
 	}
 }
@@ -45,11 +40,11 @@ const Footer = () => {
 	const year = new Date().getFullYear();
 	return (
 		<StyledFooter>
-			<hr className="navigation-underline" />
+			<HorizontalRule />
 			<div>
 				<span>
 					<p>
-						(c) henry oberholtzer {year} |{' '}
+						henry oberholtzer {year} |{' '}
 						<Link to={'mailto:'.concat(emailAddress())}>get in touch!</Link>
 					</p>
 				</span>

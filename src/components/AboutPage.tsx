@@ -1,10 +1,11 @@
+
 export default function AboutPage() {
 	return (
 		<div className="about-page">
-			<p>Programmer, musician & designer based in the Pacific Northwest</p>
+			<p>Programmer, musician & designer based in the Pacific Northwest.</p>
 			<br/>
 			<h4>Recent Code</h4>
-			<p><a href="https://github.com/henry-oberholtzer/acidpattern">acidpattern</a> - Website for sharing patterns for the Roland TB-303.</p>
+			<p><a href="https://github.com/henry-oberholtzer/acidpattern">acidpattern</a> (2024) - TB-303 emulation and pattern sharing hub.</p>
 			<p><a href="https://github.com/henry-oberholtzer/mp3-to-mp4">mp3-to-mp4</a> - Application to convert audio to mp4s for streaming platforms.</p>
 			<p><a href="https://github.com/henry-oberholtzer/zen-minesweeper">zen minesweeper</a> - Browser based recreation of the classic Windows 95 minesweeper.</p>
 			<p><a href="https://github.com/henry-oberholtzer/beyondtipping">beyondtipping</a> - Hub for finding restaurants that have moved away from tipping to living wages.</p>

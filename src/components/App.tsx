@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import Footer from './Footer';
-import HeaderBlock from './HeaderBlock';
+import { Header } from './Header';
 import NavigationBar from './NavigationBar';
 import { Outlet } from 'react-router-dom';
+import { GlobalStylesheet } from './GlobalStylesheet';
 
 const MainBox = styled.div`
 width: 100%;
@@ -36,10 +37,10 @@ const properties = [
 function App() {
 	return (
 		<MainBox>
-			<HeaderBlock 
-				children={<NavigationBar 
-				links={properties}/>}
-			/>
+			<GlobalStylesheet />
+			<Header>
+				<NavigationBar links={properties} />
+			</Header>
 			<Outlet />
 			<Footer />
 		</MainBox>

@@ -39,7 +39,4 @@ interface ProjectBlock {
   data: projectInformation
 }
 
-interface NavigationButon {
-  to: string,
-  name: string,
-}
+

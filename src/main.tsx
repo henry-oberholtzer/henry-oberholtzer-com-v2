@@ -6,7 +6,7 @@ import ErrorPage from './components/ErrorPage.tsx';
 import PageBlocks from './components/PageBlocks.tsx';
 import './index.scss';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
+import { CustomThemeProvider } from './components/index.ts';
 
 
 const router = createBrowserRouter([
@@ -40,6 +40,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
-		<RouterProvider router={router} />
+		<CustomThemeProvider>
+			<RouterProvider router={router} />
+		</CustomThemeProvider>
 	</React.StrictMode>
 );

@@ -1,17 +1,7 @@
+import { PropsWithChildren } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components'
-
-const HR = styled.hr`
-margin-top: 12px;
-position: relative;
-width: 100%;
-color: #1a2415;
-border: 0;
-border-top: 1px solid #1a2415;
-border-bottom: 1px solid transparent;
-height: 1px;
-transition: border ease-in-out 200ms;`
-
+import { HorizontalRule } from '../HorizontalRule';
 
 const H1 = styled.h1`
 text-transform: lowercase;
@@ -21,7 +11,7 @@ white-space: nowrap;
 font-weight: normal;
 transition: font-size ease-in 200ms;
 transition: opacity ease-in-out 200ms;
-&:hover ${HR} {
+&:hover ${HorizontalRule} {
 	border-top: 1px solid #1a2415;
 	border-bottom: 1px solid #1a2415;
 }
@@ -32,26 +22,24 @@ transition: opacity ease-in-out 200ms;
 	font-size: 72px;
 }`
 
-const Header = styled.header`
+const HeaderContainer = styled.header`
 padding-top: 12px;
 padding-bottom: 24px;
 `
 
-const HeaderBlock = (props: HeaderBlockProps) => {
+const Header = (props: PropsWithChildren) => {
 	return (
-		<Header>
+		<HeaderContainer>
 			<Link
 				to={'/'}
 				title="henryoberholtzer.com">
 				<H1>Henry Oberholtzer
-				<HR/>
+				<HorizontalRule />
 				</H1>
 			</Link>
 			{props.children}
-		</Header>
+		</HeaderContainer>
 	);
 };
 
-
-
-export default HeaderBlock;
+export { Header }
