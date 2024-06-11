@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './components/App.tsx';
 import AboutPage from './components/AboutPage.tsx';
 import ErrorPage from './components/ErrorPage.tsx';
-import PageBlocks from './components/PageBlocks.tsx';
+// import PageBlocks from './components/PageBlocks.tsx';
 import './index.scss';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { CustomThemeProvider } from './components/index.ts';
@@ -19,21 +19,21 @@ const router = createBrowserRouter([
 				path: '/',
 				element: <AboutPage />,
 			},
-			{
-				path: '/code',
-				element: <PageBlocks />,
-				errorElement: <ErrorPage />,
-			},
-			{
-				path: '/music',
-				element: <PageBlocks />,
-				errorElement: <ErrorPage />,
-			},
-			{
-				path: '/design',
-				element: <PageBlocks />,
-				errorElement: <ErrorPage />,
-			},
+			// {
+			// 	path: '/code',
+			// 	element: <PageBlocks />,
+			// 	errorElement: <ErrorPage />,
+			// },
+			// {
+			// 	path: '/music',
+			// 	element: <PageBlocks />,
+			// 	errorElement: <ErrorPage />,
+			// },
+			// {
+			// 	path: '/design',
+			// 	element: <PageBlocks />,
+			// 	errorElement: <ErrorPage />,
+			// },
 		],
 	},
 ]);

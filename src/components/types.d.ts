@@ -3,6 +3,7 @@ interface NavigationBarProps {
 }
 
 interface NavigationButtonProps {
+	target?: string;
 	link: string;
   title: string;
 }

@@ -4,6 +4,7 @@ const GlobalStylesheet = createGlobalStyle`
 * {
 box-sizing: border-box;
 margin: 0;
+color: ${props => props.theme.text};
 }
 
 #root {
@@ -23,9 +24,12 @@ background-color: ${props => props.theme.background};
 
 a {
 	text-decoration: none;
-	color: ${props => props.theme.text};
+	color: ${props => props.theme.link};
 	font-weight: normal;
-	transition: opacity ease-in-out 50ms;
+	transition: color ease-in-out 50ms;
+}
+a:hover {
+	color: ${props => props.theme.linkHover};
 }`
 
 export { GlobalStylesheet }

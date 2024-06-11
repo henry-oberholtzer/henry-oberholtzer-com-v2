@@ -20,6 +20,7 @@ const NavigationBar = (props: NavigationBarProps) => {
 					<NavigationButton
 						key={i}
 						to={link.link}
+						target={link.target}
 						name={link.title}
 					/>
 				)

@@ -36,7 +36,8 @@ const NavigationButton = (props: NavigationButton) => {
 	const { to, name } = props;
 	return (
 		<Link
-			to={to}>
+			to={to}
+			target={props.target}>
 			<Button>
 				{name}
 				<NavigationUnderline $active={location.pathname === to} />

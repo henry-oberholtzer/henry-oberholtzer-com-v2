@@ -12,8 +12,8 @@ font-weight: normal;
 transition: font-size ease-in 200ms;
 transition: opacity ease-in-out 200ms;
 &:hover ${HorizontalRule} {
-	border-top: 1px solid #1a2415;
-	border-bottom: 1px solid #1a2415;
+	border-top: 1px solid ${props => props.theme.primary};
+	border-bottom: 1px solid ${props => props.theme.primary};
 }
 @media screen and (min-width: 480px) {
 	font-size: 48px;

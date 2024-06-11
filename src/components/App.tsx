@@ -21,17 +21,20 @@ padding: 0 18px;
 
 const properties = [
 		{
-			link: "/code",
-			title: "code"
+			link: "https://github.com/henry-oberholtzer",
+			title: "code",
+			target: "blank"
 		},
 		{
-			link: "/music",
-			title: "music"
+			link: "https://soundcloud.com/hypersurface",
+			title: "music",
+			target: "blank"
 		},
-		{
-			link: "/design",
-			title: "design"
-		}
+		// {
+		// 	link: "https://github.com/henry-oberholtzer",
+		// 	title: "design",
+		// 	target: "blank"
+		// }
 	]
 
 function App() {

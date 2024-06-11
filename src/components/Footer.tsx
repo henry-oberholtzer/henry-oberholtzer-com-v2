@@ -19,7 +19,7 @@ a {
 	transition: color ease-in-out 200ms;
 }
 a:hover, a:focus, a:active {
-	color: #1a2415;
+	color: ${props => props.theme.linkHover};
 }
 @media (prefers-contrast: more) {
 	.footer {
