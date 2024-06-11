@@ -54,9 +54,11 @@ App
 
 ## Upcoming Changes / Planned Features
 
+- Actual blog style posts from yours truly
+- More theme option, switch for themes
+- Alternate styling options (totally different looks possibly)
 - SEO meta tags
 - React Animations (react-spring /core?)
-- Switchable themes
 - Isomorphic Deployment (Next.js?)
 
 ## License
