@@ -1,4 +1,4 @@
-import { DesignProject } from "../DesignProject";
+import { DesignProject } from "../DesignProject"
 
 const DesignPage = () => {
   const projects: DesignProjectProps[] = [
@@ -7,19 +7,19 @@ const DesignPage = () => {
       year: 2024,
       images: [
         {
-          url: './design/album_art/acid_techno.png',
+          url: './design_images/album_art/acid_techno.png',
           caption: 'New Age of Acid Techno Volume 2',
         },
         {
-          url: './design/album_art/bti.jpg',
+          url: './design_images/album_art/bti.jpg',
           caption: 'Breaking Through Ice',
         },
         {
-          url: './design/album_art/vcr.jpg',
+          url: './design_images/album_art/vcr.jpg',
           caption: 'Vicious Circle Recordings',
         },
         {
-          url: './design/album_art/eurotrance.png',
+          url: './design_images/album_art/eurotrance.png',
           caption: 'Eurotrance Volume 1',
         }
       ]
@@ -30,31 +30,31 @@ const DesignPage = () => {
       year: 2021,
       images: [
         {
-          url: './design/posters/friday_at_four.jpg',
+          url: './design_images/posters/friday_at_four.jpg',
           caption: 'Friday At Four'
         },
         {
-          url: './design/posters/parc_1.png',
+          url: './design_images/posters/parc_1.png',
           caption: 'PARC Poster'
         },
         {
-          url: './design/posters/parc_2.png',
+          url: './design_images/posters/parc_2.png',
           caption: 'PARC Poster 2'
         },
         {
-          url: './design/posters/parc_3.png',
+          url: './design_images/posters/parc_3.png',
           caption: 'PARC Poster 3'
         },
         {
-          url: './design/posters/theme_reveal.png',
+          url: './design_images/posters/theme_reveal.png',
           caption: 'Renn Faire Theme Reveal'
         },
         {
-          url: './design/posters/kdvs.png',
+          url: './design_images/posters/kdvs.png',
           caption: 'KDVS 90.3fm'
         },
         {
-          url: './design/posters/kdvs_vinyl_fair.png',
+          url: './design_images/posters/kdvs_vinyl_fair.png',
           caption: 'KDVS Vinyl Fair 2016',
         }
       ]
@@ -64,19 +64,19 @@ const DesignPage = () => {
       year: 2019,
       images: [
         {
-          url: './design/orientation/shirt_2.jpg',
+          url: './design_images/orientation/shirt_2.jpg',
           caption: 'T-Shirt Front',
         },
         {
-          url: './design/orientation/shirt_1.jpg',
+          url: './design_images/orientation/shirt_1.jpg',
           caption: 'T-Shirt Back',
         },
         {
-          url: './design/orientation/business_card.png',
+          url: './design_images/orientation/business_card.png',
           caption: 'Informational Card',
         },
         {
-          url: './design/orientation/signage_2.jpg',
+          url: './design_images/orientation/signage_2.jpg',
           caption: 'Directional Signage',
         }
       ]
@@ -88,19 +88,19 @@ const DesignPage = () => {
       border: 1,
       images: [
         {
-          url: './design/krrc/krrc_logo.png',
+          url: './design_images/krrc/krrc_logo.png',
           caption: 'KRRC Logo',
         },
         {
-          url: './design/krrc/krrc_guide.jpg',
+          url: './design_images/krrc/krrc_guide.jpg',
           caption: 'Station Guide',
         },
         {
-          url: './design/krrc/krrc_web.png',
+          url: './design_images/krrc/krrc_web.png',
           caption: 'KRRC.fm',
         },
         {
-          url: './design/krrc/krrc_mockup.jpg',
+          url: './design_images/krrc/krrc_mockup.jpg',
           caption: 'KRRC.fm Mockup',
         },
       ]
@@ -111,19 +111,19 @@ const DesignPage = () => {
       year: 2017,
       images: [
         {
-          url: './design/artwork/callisto.png',
+          url: './design_images/artwork/callisto.png',
           caption: 'Callisto I',
         },
         {
-          url: './design/artwork/callisto_2.png',
+          url: './design_images/artwork/callisto_2.png',
           caption: 'Callisto II',
         },
         {
-          url: './design/artwork/digital_analog.jpg',
+          url: './design_images/artwork/digital_analog.jpg',
           caption: 'Digital Analog',
         },
         {
-          url: './design/artwork/11_17.jpg',
+          url: './design_images/artwork/11_17.jpg',
           caption: '11x17',
         },
       ]
