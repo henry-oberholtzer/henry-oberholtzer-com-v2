@@ -1,18 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './components/App.tsx';
-import AboutPage from './components/AboutPage.tsx';
-import ErrorPage from './components/ErrorPage.tsx';
+
 // import PageBlocks from './components/PageBlocks.tsx';
 import './index.scss';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { CustomThemeProvider, DesignPage } from './components/index.ts';
-
+import { CustomThemeProvider } from './components/index.ts';
+import { Root, DesignPage, AboutPage, ErrorPage } from './views/index.ts';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <App />,
+		element: <Root />,
 		errorElement: <ErrorPage />,
 		children: [
 			{

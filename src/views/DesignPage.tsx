@@ -1,4 +1,4 @@
-import { DesignProject } from "../DesignProject"
+import { DesignProject } from "../components/DesignProject"
 
 const DesignPage = () => {
   const projects: DesignProjectProps[] = [

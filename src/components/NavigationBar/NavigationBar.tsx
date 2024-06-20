@@ -1,4 +1,4 @@
-import { NavigationButton } from './NavigationButton';
+import { NavigationButton } from '../NavigationButton';
 import styled from 'styled-components'
 
 const Nav = styled.nav`
@@ -29,5 +29,5 @@ const NavigationBar = (props: NavigationBarProps) => {
 	);
 };
 
-export default NavigationBar;
+export { NavigationBar };
 

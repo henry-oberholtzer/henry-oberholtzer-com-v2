@@ -1,7 +1,7 @@
-import emailAddress from './email';
+import { emailAddress } from './email';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { HorizontalRule } from './HorizontalRule';
+import { HorizontalRule } from '../HorizontalRule';
 
 const StyledFooter = styled.footer`
 padding-top: 32px;
@@ -62,4 +62,4 @@ const Footer = () => {
 	);
 };
 
-export default Footer;
+export { Footer };

@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Section = styled.section`
 	`
 
-export default function AboutPage() {
+const AboutPage = () => {
 	return (
 		<Section>
 			<p>Programmer, musician & designer based in the Pacific Northwest.</p>
@@ -31,3 +31,5 @@ export default function AboutPage() {
 		</Section>
 	);
 }
+
+export { AboutPage }

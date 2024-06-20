@@ -3,4 +3,4 @@ const emailAddress = () => {
   return (atob(encodedEmail));
 }
 
-export default emailAddress;
+export { emailAddress };

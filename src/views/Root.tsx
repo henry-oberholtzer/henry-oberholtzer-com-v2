@@ -1,9 +1,6 @@
 import styled from 'styled-components';
-import Footer from './Footer';
-import { Header } from './Header';
-import NavigationBar from './NavigationBar';
 import { Outlet } from 'react-router-dom';
-import { GlobalStylesheet } from './GlobalStylesheet';
+import { GlobalStylesheet, Header, Footer, NavigationBar } from '../components';
 
 const MainBox = styled.div`
 width: 100%;
@@ -36,7 +33,7 @@ const properties = [
 		}
 	]
 
-function App() {
+const Root = () => {
 	return (
 		<MainBox>
 			<GlobalStylesheet />
@@ -49,4 +46,4 @@ function App() {
 	);
 }
 
-export default App;
+export { Root };
