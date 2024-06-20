@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { HorizontalRule } from "../HorizontalRule"
 import { CardStack } from "../CardStack"
+import { ProjectHeader } from "../ProjectHeader"
 
 const DesignContainer = styled.section`
   &:first-of-type {
@@ -11,40 +12,17 @@ const DesignContainer = styled.section`
   }
   `
 
-const HeaderContainer = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  `
-
-const SmallHeader = styled.h3`
-  font-weight: normal;`
-
-const Year = styled(SmallHeader)`
-  text-align: right;
-  color: ${props => props.theme.textLight};`
-
 const DesignProject = (props: DesignProjectProps) => {
   const { year, title, description, images, yearFrom, border } = props;
 
   return (
       <DesignContainer>
-        {title &&
-          <>
-            <HeaderContainer>
-              <SmallHeader>
-                {title}
-              </SmallHeader>
-              {year &&           
-                <Year>
-                  {yearFrom && `${yearFrom} - `}
-                  {year}
-                </Year>
-              }
-            </HeaderContainer>
-            <HorizontalRule />
-          </>       
-        }
+        <ProjectHeader
+          title={title}
+          year={year}
+          description={description}
+          yearFrom={yearFrom}
+        />
         {description && <>
           <p style={{ marginTop: '8px'}}>{description}</p>
           <HorizontalRule/>

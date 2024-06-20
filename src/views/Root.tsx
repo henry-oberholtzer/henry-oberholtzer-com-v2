@@ -18,9 +18,8 @@ padding: 0px 18px;
 
 const properties = [
 		{
-			link: "https://github.com/henry-oberholtzer",
+			link: "/code",
 			title: "code",
-			target: "blank"
 		},
 		{
 			link: "https://soundcloud.com/hypersurface",

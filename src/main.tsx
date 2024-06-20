@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { CustomThemeProvider } from './components/index.ts';
-import { Root, DesignPage, AboutPage, ErrorPage } from './views/index.ts';
+import { Root, DesignPage, AboutPage, ErrorPage, CodePage } from './views/index.ts';
 
 const router = createBrowserRouter([
 	{
@@ -17,11 +17,11 @@ const router = createBrowserRouter([
 				path: '/',
 				element: <AboutPage />,
 			},
-			// {
-			// 	path: '/code',
-			// 	element: <PageBlocks />,
-			// 	errorElement: <ErrorPage />,
-			// },
+			{
+				path: '/code',
+				element: <CodePage />,
+				errorElement: <ErrorPage />,
+			},
 			// {
 			// 	path: '/music',
 			// 	element: <PageBlocks />,
