@@ -6,7 +6,7 @@ import ErrorPage from './components/ErrorPage.tsx';
 // import PageBlocks from './components/PageBlocks.tsx';
 import './index.scss';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { CustomThemeProvider } from './components/index.ts';
+import { CustomThemeProvider, DesignPage } from './components/index.ts';
 
 
 const router = createBrowserRouter([
@@ -29,11 +29,11 @@ const router = createBrowserRouter([
 			// 	element: <PageBlocks />,
 			// 	errorElement: <ErrorPage />,
 			// },
-			// {
-			// 	path: '/design',
-			// 	element: <PageBlocks />,
-			// 	errorElement: <ErrorPage />,
-			// },
+			{
+				path: '/design',
+				element: <DesignPage />,
+				errorElement: <ErrorPage />,
+			},
 		],
 	},
 ]);

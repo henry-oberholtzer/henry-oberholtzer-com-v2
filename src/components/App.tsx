@@ -30,11 +30,10 @@ const properties = [
 			title: "music",
 			target: "blank"
 		},
-		// {
-		// 	link: "https://github.com/henry-oberholtzer",
-		// 	title: "design",
-		// 	target: "blank"
-		// }
+		{
+			link: "/design",
+			title: "design",
+		}
 	]
 
 function App() {
