@@ -12,10 +12,9 @@ const Thumbnail = styled.img`
 const GridContainer = styled.div`
   margin-top: 8px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-auto-flow: column;
-  gap: 8px;
-  @media ()`
+  gap: 8px;`
 
 const ImageGrid = () => {
   return (

@@ -8,7 +8,7 @@ import { GlobalStylesheet } from './GlobalStylesheet';
 const MainBox = styled.div`
 width: 100%;
 height: 100%;
-padding: 0 18px;
+padding: 0px 18px;
 @media screen and (min-width: 768px) {
 		padding: 18px 48px;
 }

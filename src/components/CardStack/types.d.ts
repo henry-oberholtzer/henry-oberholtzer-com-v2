@@ -1,8 +1,9 @@
 interface CardStackProps {
   images?: ImageProps[]
   options?: {
-    width: number,
-    height: number,
+    width?: number,
+    height?: number,
+    border?: number,
   }
 }
 
