@@ -3,4 +3,5 @@ interface ProjectHeaderProps {
   description?: string,
   year?: number,
   yearFrom?: number,
+  programmingLanguages?: ProgrammingLanguagePercents
 }

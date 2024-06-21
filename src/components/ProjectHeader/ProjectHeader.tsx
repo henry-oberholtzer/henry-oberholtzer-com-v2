@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { HorizontalRule } from ".."
+import { HorizontalRule, ProgrammingLanguageBar } from ".."
 
 const HeaderContainer = styled.div`
   width: 100%;
@@ -15,7 +15,7 @@ const Year = styled(SmallHeader)`
   color: ${props => props.theme.textLight};`
 
 const ProjectHeader = (props: ProjectHeaderProps) => {
-  const { title, year, yearFrom } = props;
+  const { title, year, yearFrom, description, programmingLanguages } = props;
   
   return (
       <>
@@ -33,6 +33,12 @@ const ProjectHeader = (props: ProjectHeaderProps) => {
           }
         </HeaderContainer>
         <HorizontalRule />
+        {description && <>
+          <p style={{ marginTop: '8px'}}>{description}</p>
+        </>}
+        {programmingLanguages && 
+            <ProgrammingLanguageBar languages={programmingLanguages} />
+        }
       </>       
   )
 }

@@ -18,18 +18,21 @@ const Container = styled.div<{ $width?: number, $height?: number }>`
   margin-top: 16px;
   margin-bottom: 16px;`
 
-const Image = styled.img<{ $width?: number, $height?: number, $border?: number }>`
-  height: 300px;
+const Image = styled.img<{ $fullWidth?: boolean, $border?: number }>`
+  ${props => props.$fullWidth ? 'width: 100%;' :
+    'height: 300px;'
+  }
+  max-height: 400px;
   border-radius: 2px;
   ${props => props.$border ? `border: ${props.$border}px solid ${props.theme.textLight};` : ''}`
 
-const CardStack = (props: CardStackProps) => {
+const SwiperGallery = (props: SwiperGalleryProps) => {
   const { images, options } = props;
 
   return (
     <Container  $width={options?.width} $height={options?.height}>
       <Swiper
-        slidesPerView={'auto'}
+        slidesPerView={options?.fullWidth ? 1 : 'auto'}
         spaceBetween={'8px'}
         scrollbar={{
           hide: true,
@@ -41,11 +44,13 @@ const CardStack = (props: CardStackProps) => {
         {images && images.map((i) => {
           return (
             <SwiperSlide>
-              <Image  $width={options?.width} $height={options?.height} $border={options?.border}
+              <Image $fullWidth={options?.fullWidth} $border={options?.border}
               alt={i.caption}
               src={i.url}
               />
-              <p>{i.caption}</p>
+              {!options?.noCaptions && 
+                <p>{i.caption}</p>
+              }
             </SwiperSlide>
           )
         })}
@@ -54,5 +59,5 @@ const CardStack = (props: CardStackProps) => {
   )
 }
 
-export { CardStack }
+export { SwiperGallery }
 
