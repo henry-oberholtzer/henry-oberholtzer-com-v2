@@ -4,4 +4,12 @@ interface ProjectHeaderProps {
   year?: number,
   yearFrom?: number,
   programmingLanguages?: ProgrammingLanguagePercents
+  links?: ProjectLinks
+}
+
+
+
+interface ProjectLinks {
+  gitHub?: string
+  live?: string
 }

@@ -19,7 +19,7 @@ const Container = styled.div<{ $width?: number, $height?: number }>`
   margin-bottom: 16px;`
 
 const Image = styled.img<{ $fullWidth?: boolean, $border?: number }>`
-  ${props => props.$fullWidth ? 'width: 100%;' :
+  ${props => props.$fullWidth ? 'width: 100%; object-fit: cover; object-position: top;' :
     'height: 300px;'
   }
   max-height: 400px;

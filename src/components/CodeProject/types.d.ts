@@ -5,4 +5,5 @@ interface CodeProjectProps {
   yearFrom?: number,
   programmingLanguages?: ProgrammingLanguagePercents,
   images?: ImageProps[]
+  links?: ProjectLinks
 }

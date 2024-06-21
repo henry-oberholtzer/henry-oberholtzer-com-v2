@@ -57,7 +57,9 @@ const ProgrammingLanguageBar = (props: ProgrammingLanguageBarProps) => {
         if (percent && percent > 0) {
           return (
             <PercentChunk width={percent} color={color ? color : '#CCC'}>
-              <Label color={color}>{name} - {percent}%</Label>
+              {percent > 10 && 
+                <Label color={color}>{name} - {percent}%</Label>
+              }
             </PercentChunk>
           )
         }

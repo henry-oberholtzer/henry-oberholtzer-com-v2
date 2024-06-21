@@ -4,14 +4,15 @@ import { ProjectHeader } from "../ProjectHeader"
 import { SwiperGallery } from "../SwiperGallery";
 
 const CodeProject = (props: CodeProjectProps) => {
-  const { year, title, description, yearFrom, images, programmingLanguages } = props;
+  const { year, title, description, yearFrom, images, programmingLanguages, links } = props;
 
   return (
-    <ProjectContainer>
+    <ProjectContainer style={{marginBottom: '48px'}}>
       <ProjectHeader
         title={title}
         year={year}
         description={description}
+        links={links}
         yearFrom={yearFrom}
       />
       {images &&         
@@ -24,7 +25,7 @@ const CodeProject = (props: CodeProjectProps) => {
         />
       }
       {programmingLanguages && 
-            <ProgrammingLanguageBar languages={programmingLanguages} />
+        <ProgrammingLanguageBar languages={programmingLanguages} />
         }
     </ProjectContainer>
   )
